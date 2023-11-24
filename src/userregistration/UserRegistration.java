@@ -24,6 +24,14 @@ public class UserRegistration {
         System.out.println("enter a valid phone number starting with '+' symbol with respective country code then followed by your 10digit number:");
         String phoneNumber = scan.nextLine();
         System.out.println(Pattern.matches("[+]\\d{2}[ ]\\d{10}",phoneNumber));
+        //usecase5:enter valid password
+        System.out.println("enter a valid password:");
+        System.out.println("rule1-enter a valid password that contain minimum 8 characters");
+        System.out.println("rule2-enter a valid password that contain atleast one uppercase");
+        System.out.println("rule3-enter a valid password that contain atleast one numeric value");
+        System.out.println("rule4-enter a valid password that contain atleast one special characters");
+        String password = scan.nextLine();
+        System.out.println(Pattern.matches("(?=.*[0-9])(?=.*[a-z])(?=.*[!@#$%^&*-?]).{8,15}",password));
 
 
 
