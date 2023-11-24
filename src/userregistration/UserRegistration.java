@@ -16,6 +16,10 @@ public class UserRegistration {
         System.out.println("enter a valid last name, it should start with capital letter and should contain atleast minimum 3 characters:");
         String lastName = scan.nextLine();
         System.out.println(Pattern.matches("[A-Z][a-z]{3,}",lastName));
+        //usecase3:enter valid email id
+        System.out.println("enter a valid email address, example-xyz@gmail.com");
+        String emailId = scan.nextLine();
+        System.out.println(Pattern.matches("[a-z0-9]+[@][a-z]+[.][a-z]{2,3}",emailId));
 
 
 
