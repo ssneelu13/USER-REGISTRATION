@@ -20,6 +20,10 @@ public class UserRegistration {
         System.out.println("enter a valid email address, example-xyz@gmail.com");
         String emailId = scan.nextLine();
         System.out.println(Pattern.matches("[a-z0-9]+[@][a-z]+[.][a-z]{2,3}",emailId));
+        //usecase4:enter valid phone number
+        System.out.println("enter a valid phone number starting with '+' symbol with respective country code then followed by your 10digit number:");
+        String phoneNumber = scan.nextLine();
+        System.out.println(Pattern.matches("[+]\\d{2}[ ]\\d{10}",phoneNumber));
 
 
 
